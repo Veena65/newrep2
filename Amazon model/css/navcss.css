@@ -1,0 +1,376 @@
+*
+{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+nav
+{
+    display: flex;
+    background-color: black;
+    height: 10vh;
+    
+}
+a
+{
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+    height: 8vh;
+}
+a:hover
+{
+    border: 1.5px solid white;
+}
+#part1
+{
+    flex: 3;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-left: 20px;
+    justify-content: space-evenly;
+}
+#part1 img{
+    width: 100px;
+    height: 40px;
+}
+
+#sbtn
+{
+    display: flex;
+    align-items: center;
+}
+#sbtn i
+{
+    font-size: 1.5em;
+    flex: 1;
+}
+#scnt
+{
+    flex: 10;
+    display: flex;
+    flex-direction: column;
+}
+#l1
+{
+    font-size: 0.9em;
+    text-align: left;
+}
+#l2
+{
+    font-size: 0.9em;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#part2
+{
+    position: relative;
+    flex:5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+}
+
+#btn21
+{
+    width: 50px;
+    height: 40px;
+    position: absolute;
+    left: 28px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border: none;
+}
+#b21
+{
+    position: relative;
+}
+#list
+{
+    display: none;
+    z-index: 1;
+    position: absolute;
+    border: 1px solid black;
+    top: 38px;
+}
+#list a
+{
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    width: 100px;
+    height: 30px;
+    display: block;
+}
+#list a:hover{
+    background-color: lightblue;
+}
+.btn22
+{
+    width: 50px;
+    height: 40px;
+    border: none;
+    background-color:rgb(241, 175, 153);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    position: absolute;
+    right: 29px;
+}
+#part2 #iptext
+{
+    width: 480px;
+    height: 40px;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    position: relative;
+    text-indent: 55px;
+}
+#part2 #iptext:focus 
+{
+    /* border: 2px solid coral; */
+    outline: 3px solid coral;
+} 
+
+#btn21:hover, .btn22:hover
+{
+    border: 2px solid coral;
+}
+#btn21:hover i
+{
+    transform: rotate(180deg);
+}
+#btn21:hover #list 
+{
+    display: block;
+}
+
+#part3
+{
+    flex:4;
+    align-items: center;
+    justify-content: space-evenly;
+    display: flex;
+}
+#part3 .a1
+{
+    display: flex;
+    align-items: center; 
+}
+#part3 img
+{
+    width: 40px;
+    height: 25px;
+}
+#lang
+{
+    position: relative;
+}
+#llist
+{
+    display: none;
+    z-index: 1;
+    position: absolute;
+    border: 1px solid black;
+    top: 45px;
+    left:-35px;
+    padding-top: 10px;
+}
+#llist::before
+{
+    position: absolute;
+    content: "";
+    top: -5px;
+    right: 25px;
+    width: 20px;
+    height: 20px;
+    background-color:white;
+    transform: rotate(45deg);
+}
+#lang:hover #llist
+{
+   display: flex;
+   flex-direction: column;
+   width: 150px;
+   color: black;
+   font-size: 1em;
+   padding: 5px;
+   gap: 5px;
+   background-color: white;
+}
+
+#llist p:hover
+{
+    text-decoration: underline;
+    color: orange;
+}
+#locbox
+{
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+#lbform
+{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: fixed;
+    width: 320px;
+    height:auto;
+    top: 200px;
+    left: 480px;
+    border-radius: 8px;
+    border: 1px solid green;
+}
+#lbform h3
+{
+    font-size: 1.3em;
+    font-weight: bolder;
+    background-color:lightgray;
+    padding: 15px;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+    position: relative;
+}
+#lbform h3 span
+{
+    position: absolute;
+    cursor: pointer;
+    color: blue;
+    right: 20px;
+}
+#lbform h3 span:hover
+{
+    color: red;
+}
+#lfcont
+{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+#sibtn
+{
+    height: 30px;
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    background-color: yellow;
+}
+#lfcont input
+{
+    width: 69%;
+    height: 30px;
+}
+#abtn
+{
+    width: 29%;
+    height: 30px;
+}
+#lfcont select
+{
+    width: 100%;
+    height: 30px;
+    border-radius: 5px;
+}
+#sal
+{
+    position: relative;
+}
+#salist
+{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    width: 408px;
+    color: black;
+    border: 1px solid black;
+    left: -200px;
+    top: 48px;
+    
+}
+#salist::before
+{
+    position: absolute;
+    content: "";
+    top: -5px;
+    right: 80px;
+    width: 20px;
+    height: 20px;
+    background-color:white;
+    transform: rotate(45deg);
+}
+#sal:hover #salist
+{
+    display: block;
+}
+
+#salcont
+{
+    display: grid;
+    grid-template-columns: repeat(4,100px);
+    grid-template-areas:
+    "h h h h"
+    "l l a a";
+    gap: 2px;
+    background-color: rgb(71, 68, 68);
+    
+}
+#g1,#g2,#g3
+{
+    background-color: white;  
+    padding: 10px; 
+}
+#g1
+{
+    grid-area: h;
+    display: flex;
+    flex-direction: column;
+    row-gap: 3px;
+}
+#g1 button
+{
+    width: 200px;
+    height: 30px;
+    border: none;
+    background-color: yellow;
+    border-radius: 20px;
+    display: block;
+    margin: 0px auto;
+}
+#g1 small
+{
+    font-size: 0.8em;
+    text-align: center;
+}
+#g1 span
+{
+    font-size: 0.9em;
+    color: lightseagreen;
+}
+#g1 span:hover,#g2 p:hover,#g3 p:hover
+{
+    color: rgb(255, 145, 0);
+    text-decoration: underline;
+}
+#g2
+{
+    grid-area: l;
+}
+#g3
+{
+    grid-area: a;
+}
+
+#g2 p,#g3 p
+{
+    font-size: 0.8em;
+}

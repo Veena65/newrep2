@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../image/background/e1.jpg">
+    <title>Onane Shopping site in India</title>
+    <link rel="stylesheet" href="./css/navcss.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div>
+        <nav>
+            <div id="part1">
+                <a href="index.html">
+                    <img src="./image/logo.png" alt="amazon.in" >
+                </a>
+                <a href="#" id="sbtn" onclick="document.getElementById('locbox').style.display='block'">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <div id="scnt">
+                        <p id="l1">Hello</p>
+                        <p id="l2">Select your  Address</p>
+                    </div> 
+                </a>
+            </div>
+            <div id="part2">
+                
+                <input type="text" id="iptext" placeholder="Search Amazon.in">
+                <button id="btn21">
+                    <div id="b21">All  <i class="fa-solid fa-caret-down"></i></div>
+                    <div id="list">
+                        <a href="#">All Catagories</a>
+                        <a href="#">Food</a>
+                        <a href="#">Dress</a>
+                        <a href="#">Electronics</a>
+                        <a href="#">Decors</a>
+                        <a href="#">Toys</a>
+                        <a href="#">Books</a>
+                    </div>
+                </button>
+                <button class="btn22"><i class="fa-solid fa-magnifying-glass"></i></button>
+                <span></span>
+            </div>
+            <div id="part3">
+                <a href="#" class="a1" id="lang">
+                    <img src="./image/flag.png" alt="flag">&nbsp
+                    EN<i class="fa-solid fa-caret-down"></i>
+                    <div id="llist">
+                        <p><input type="radio" checked> English</p>
+                        
+                        <hr>
+                        <div id="lli">
+                            <p><input type="radio" name="rbtn">தமிழ் - TA</p>
+                            <p><input type="radio" name="rbtn"> हिंदी - HI</p>
+                            <p><input type="radio" name="rbtn"> తెలుగు - TE</p>
+                            <p><input type="radio" name="rbtn"> മലയാളം - ML</p>
+                            <p><input type="radio" name="rbtn"> ಕನ್ನಡ - KN</p>
+                            <p><input type="radio" name="rbtn"> मराठी - MR</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" id="sal">
+                    <p>Hello Sign in</p>
+                    <p>Account & Lists<i class="fa-solid fa-caret-down"></i> </p>
+                    <div id="salist">
+                        <div id="salcont">
+                            <div id="g1">
+                                <button>Sign In</button>
+                                <small>New Customer? <span>Start here</span></small>
+                            </div>
+                            <div id="g2">
+                                <h2>Your List</h2>
+                                <p>Create a Wish List</p>
+                                <p>Wish from Any Website</p>
+                                <p>Baby WishList</p>
+                                <p>Discover your Style</p>
+                                <p>Explore Showroom</p>
+                            </div>
+                            <div id="g3">
+                                <h2>Your Account</h2>
+                                <p>Your Account</p>
+                                <p>Your Orders</p>
+                                <p>Your WishList</p>
+                                <p>Your Recommendations</p>
+                                <p>Your Prime Membership</p>
+                                <p>Your Prime Video</p>
+                                <p>Your Seller Account</p>
+                                <p>Your Subscribe & Save Items</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <p>Returns</p>
+                    <p>& Orders</p>
+                </a>
+                <a href="#" class="a1">
+                    <i class="fa-solid fa-cart-shopping"></i>Cart
+                </a>
+            </div>
+        </nav>
+        
+    </div>
+
+    <div id="locbox">
+        <div id="lbform">
+            <h3>Choose a location
+            <span onclick="document.getElementById('locbox').style.display='none'"><i class="fa-solid fa-xmark"></i></span></h3>
+            <div id="lfcont">
+                <small>Select a delivery location to see product availability and delivery options</small>
+                <button id="sibtn">Sign in to see your address</button>
+                <p ><s>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</s> or enter an Indian pincode <s>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</s></p>
+                <div>
+                    <input type="number" minlength="6">
+                    <button id="abtn">Apply</button>
+                </div>
+                <p><s>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</s> or <s>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</s></p>
+                <select>
+                    <option value="Delivery outside India" selected>Delivery outside India</option>
+                    <option value="Bangladesh">Bangladesh</option>
+                    <option value="SriLanka">SriLanka</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        //  let sbtn = document.getElementById('sbtn');
+        //  sbtn.addEventListener("",()=>{
+        //         locform.style.display="block";
+        // })
+        var modal = document.getElementById('locbox');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+        
+        
+        let lli = document.getElementById("lli");
+        let list = lli.querySelectorAll('p');
+        let rbtns = lli.querySelectorAll('input[type="radio"]');
+        console.log(rbtns);
+        for(let i=0;i<list.length;i++)
+        {
+            list[i].addEventListener("mouseover",()=>{
+                rbtns[i].checked = true;
+            })
+        }
+        
+                // if(locform.style.display==="block")
+                // {
+                //     locform.addEventListener("mouseout",()=>{
+                //         document.addEventListener("click",()=>{
+                //             locform.style.display="";
+                //         })
+                //     })
+                //  }
+    </script>
+</body>
+</html>
