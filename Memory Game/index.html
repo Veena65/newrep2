@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Game</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <h1>Memory Game</h1>
+    <div id="scoreboard">
+        <div>
+            <p>No. of Attempts:<span id="count">0</span></p>
+        </div>
+        <div id="time">
+            <p>Time:</p>
+            <p id="min">00</p>
+            <p>:</p>
+            <p id="sec">00</p>
+        </div>
+    </div>
+    <div id="modes">
+        <h3>Select a mode to start the game</h3>
+        <button onclick="cards('easy')">Easy</button>
+        <button onclick="cards('diff')">Difficult</button>
+        <button onclick="cards('hard')">Hard</button>
+    </div>
+    <div id="gameboard" class="game">
+    </div>
+    <div id="end">
+        <p><a href="index.html">Click here</a> to reload the game</p>
+    </div>
+    
+    <script src="memgame.js"></script>
+
+</body>
+</html>
